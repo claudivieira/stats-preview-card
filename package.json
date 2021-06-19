@@ -1,0 +1,14 @@
+{
+  "name": "stats-preview-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "author": "Cláudia Vieira",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

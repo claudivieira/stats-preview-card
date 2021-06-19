@@ -1,0 +1,112 @@
+@import 'variables.scss';
+
+body {
+    background-color: $main-background-color;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    color: $primary-color;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $breakpoint-tablet) {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.card {
+    background-color: $card-background-color;
+    margin: 70px 20px;
+    border-radius: 5px;
+
+    &__image {
+        height: 250px;
+        background-image: linear-gradient(
+            rgba($accent-color, 0.5), 
+            rgba($accent-color, 0.5)
+          ), url(/images/image-header-mobile.jpg);
+        background-size: cover;
+        background-position: top;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.9em;
+
+        &--accent {
+            color: $accent-color;
+        }
+    }
+
+    &__text {
+        color: $secondary-color;
+        font-size: .98em;
+        line-height: 1.8;
+        margin-bottom: 0;
+    }
+
+    &__stats {
+        margin-top: 40px;
+    }
+
+    &__stat {
+        margin: 20px 0;
+    }
+
+    &__stat__value {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__stat__heading {
+        color: $stats-heading-color;
+        margin-bottom: 0;
+        font-size: .7em;
+        font-weight: $base-font-weight;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        &__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        &__info {
+            padding: 60px;
+            text-align: left;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            border-radius: 0 5px 0 0;
+        }
+
+        &__stats {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        &__stat {
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+}
+
+

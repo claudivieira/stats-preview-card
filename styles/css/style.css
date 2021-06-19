@@ -1,0 +1,71 @@
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: white; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .container {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); } }
+
+.card {
+  background-color: #1b1938;
+  margin: 70px 20px;
+  border-radius: 5px; }
+  .card__image {
+    height: 250px;
+    background-image: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 5px 5px 0 0; }
+  .card__info {
+    padding: 20px;
+    text-align: center; }
+  .card__title {
+    font-size: 1.9em; }
+    .card__title--accent {
+      color: #aa5cdb; }
+  .card__text {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: .98em;
+    line-height: 1.8;
+    margin-bottom: 0; }
+  .card__stats {
+    margin-top: 40px; }
+  .card__stat {
+    margin: 20px 0; }
+  .card__stat__value {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0; }
+  .card__stat__heading {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0;
+    font-size: .7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  @media (min-width: 768px) {
+    .card__wrapper {
+      display: flex;
+      flex-direction: row-reverse; }
+    .card__info {
+      padding: 60px;
+      text-align: left; }
+    .card__image {
+      width: 100%;
+      height: auto;
+      border-radius: 0 5px 0 0; }
+    .card__stats {
+      display: flex;
+      justify-content: space-between; }
+    .card__stat {
+      margin: 0;
+      margin-top: 20px; } }
